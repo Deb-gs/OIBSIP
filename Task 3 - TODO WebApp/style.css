@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+#task-input{
+    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#task-input input[type="text"]{
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+button:focus{
+    outline: none;
+}
+
+#pending-tasks, #completed-tasks{
+    margin-bottom: 40px;
+}
+
+#pending-tasks h2, #completed-tasks h2{
+    margin-bottom: 10px;
+}
+
+#pending-list, #completed-list{
+    list-style-type: none;
+    margin-bottom: 9px;
+    padding: 0;
+}
+
+.completed button{
+  text-decoration: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.timestamp {
+    font-size: 13px;
+    color: white;
+    margin-left: 600px;
+}
+
+.timestamp::before{
+    content: "(";
+}
+
+.timestamp::after{
+    content: ")";
+}
+li{
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-style: ridge;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-center;
+    padding: 8px 0;
+}
+
+.dBtn{
+  margin-left: 400px;
+}
+
+.cBtn{
+  margin-left: 20px;
+}
+
+
+
